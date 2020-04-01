@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+
+mybatis-plus:
+  mapper-locations: classpath:com/fidt/pims/module/**/mapper/xml/*.xml
+  typeAliasesPackage: com.fidt.pims.module.*.model,com.fidt.pims.module.*.entity
+  configuration:
+    default-enum-type-handler: com.baomidou.mybatisplus.extension.handlers.MybatisEnumTypeHandler
+  type-enums-package: com.fidt.pims.module.system.model.enums
